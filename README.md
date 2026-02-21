@@ -1,6 +1,14 @@
 # Monetization-Gate
 A no-BS dual-evaluation framework to decide what to build (or kill) before coding. Revenue-First vs Strategic Substrate + Controlled Reframing. Built for indie hackers, early founders, and technical builders who hate wasting time.
 
+### Core Framework (v2.3.1)
+Static checklist for manual evaluation of any idea/project.  
+→ [docs/framework-v2.3.1.md](docs/framework-v2.3.1.md)
+
+### Discovery Mode
+AI-powered generative version — paste into your favorite LLM to get ranked, scored ideas optimized for your intent.  
+→ [docs/discovery-mode.md](docs/discovery-mode.md)
+
 
 # Monetization Gate v2.3.1  
 **Dual Evaluation + Controlled Reframing Protocol**
