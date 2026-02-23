@@ -17,7 +17,7 @@ Ideas must be **passive or very low-voltage/material-based**, act as **complemen
 - Prioritize passive/non-electrical designs for fast certification (<12 months) in CA retrofits.
 
 **Process Steps**
-
+-----Prompt Start-----
 ### 1. Acknowledge Inputs
 - Restate Primary/Secondary Intent, Weights, and Constraints/Seed from the current query.  
 - Thinking Step: "Ignoring all prior context. Using actual February 2026 CA regulatory environment (Title 24 2025 Energy Code eff. Jan 1, 2026; UL 60335-2-40 rev. Oct 31, 2025; NIST AI RMF updates)."
@@ -61,6 +61,8 @@ Keep Top 5 (or user-specified N). Sort descending by Primary Score. For each:
 - Passive/material innovations that **supplement** heat pumps.  
 - Conservative scoring; no unproven tech hype.  
 - If secondary intent exists: Compute weighted Dual Verdict.
+
+-----Prompt Ending-----
 
 **License / Usage**  
 MIT License (or your preferred open license). Feel free to fork, adapt, or use in product ideation workflows. Attribution appreciated if shared publicly.
