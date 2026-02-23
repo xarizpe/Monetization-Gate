@@ -1,0 +1,151 @@
+# Monetization Gate v1.0 – Engineering & Safety Edition  
+**California Retrofit Focus for Novel Passive IAQ & Ventilation Products**
+
+**Version:** 1.0  
+**Release Date:** February 2026  
+**Overview**  
+This is a specialized LLM prompt framework for generating, risk-auditing, and ranking novel physical product concepts that improve **indoor air quality (IAQ) and ventilation** in California residential retrofits. It prioritizes passive or very low-energy/material-based innovations that **supplement** (not replace) mandated systems under Title 24 Part 6 (2025 Energy Code, effective January 1, 2026 for new permits), ASHRAE 62.2 amendments, and related incentives (e.g., 3C-REN programs in Santa Barbara, San Luis Obispo, Ventura counties).  
+
+Designed for revenue-first paths (DTC, Kickstarter, retail, consumable subscriptions) while embedding FMEA safety audits, engineering resource mapping, and quick validation experiments. Ideal for coastal/mild climates (e.g., Santa Maria / Climate Zone 5: marine layer humidity/mold, diurnal swings, lengthening wildfire smoke seasons).
+
+**Adoption & Next Refinement Guide**
+
+This prompt serves as **proof-of-concept** that iterative specialization—from broad discovery to tightly constrained, regulation-aware feasibility studies—produces high-quality, defensible outputs for engineering teams, product ideation, prototyping, or grant pursuits (e.g., CEC/3C-REN alignment).
+
+### Adoption Steps
+1. **Fork & Integrate** — Clone this repo and use the prompt in your LLM workflow (e.g., custom interface, Notion, Airtable). Run initial tests on IAQ/ventilation retrofit ideas.
+
+2. **First Test Run** — Example query: "Generate 6–8 ideas: purely passive IAQ/smoke/humidity mitigation; BOM under $50/unit; targeted at Santa Maria Zone 5 marine layer mold and wildfire PM2.5 in pre-Title 24 homes." Review for high Primary Scores (>7), low Friction (<6), and no baseline conflicts.
+
+3. **Customize for Your Organization**  
+   - **Localization** — Add Zone 5 defaults (~2,200–2,500 heating degree days; marine humidity Oct–May; diurnal 30–40°F swings; smoke seasons). Include "Zone 5-Specific Trigger" for mold/dew-point or PM2.5 ingress.  
+   - **Incentive Updates** — Note HEEHRA single-family rebates fully reserved in Central CA (waitlists only as of Jan 2026); emphasize active 3C-REN incentives (~$3.5M single-family 2026 for efficiency/ventilation upgrades) and utility programs (PG&E/SoCalGas).  
+   - **BOM & Manufacturing** — Require "Estimated First-Article Cost" (3D-print + AliExpress + lab fees) and "Preferred Processes" (e.g., near-shoring, filter assembly).  
+   - **IP & Ecosystem** — Add "Patent Surface Area" (e.g., novel desiccant encapsulation) and "Recurring Revenue" (filter/PCM refills).  
+   - **Risk Thresholds** — Auto-reframe/discards if Severity >7 (e.g., CO/smoke ingress) or Friction <5.  
+   - **Variants** — DTC version (viral health appeal); B2B (contractor install); R&D (grant-focused).
+
+4. **Ongoing Refinement Loop**  
+   - After runs, analyze: high-scorers (e.g., consumable filters), discards (high-liability fans), risks (airflow restriction → CO2 buildup).  
+   - Feed back: e.g., "Prioritize off-the-shelf MERV filters" or "ASHRAE 44 smoke compliance."  
+   - Version internally (v1.1+); track changelog (e.g., "v1.1 – Updated 3C-REN status; added PM2.5 ingress test").
+
+5. **Best Practices & Limitations**  
+   - Strengths: Audited concepts with quick experiments; conservative scoring.  
+   - Limitations: Conceptual (Tier 3–4) until prototyped; always validate with engineers/code experts.  
+   - Next: Prototype top ideas; interview Santa Maria homeowners (Nextdoor/Reddit); explore 3C-REN/CEC funding.
+
+Contributions welcome—fork, PR refinements, or share adaptations!
+
+**The Prompt Itself**  
+(Full prompt text – copy from here to the end marker for use)
+
+# Monetization Gate v1.0  
+**Engineering & Safety Edition – California Retrofit Focus for Novel Passive IAQ & Ventilation Products**
+
+**Version:** 1.0  
+**Release Date:** February 2026  
+**Purpose:**  
+This specialized strategic product ideation and feasibility framework generates, evaluates, and risk-audits **novel physical product concepts** for **passive or very low-energy IAQ improvement and ventilation** in California residential retrofits (single-family and low-rise multifamily).  
+
+It is **revenue-first** (DTC, Kickstarter/Indiegogo, retail, subscriptions) while embedding rigorous safety (FMEA), engineering resource mapping, and alignment with the actual February 2026 regulatory landscape (Title 24 Part 6 2025 Energy Code effective Jan 1, 2026; ASHRAE 62.2 amendments; 3C-REN incentives; etc.).  
+
+Ideas must be **passive/material-based or ultra-low-power**, act as **supplements** to mandated ventilation (e.g., HRV/ERV in many zones, whole-dwelling mechanical ventilation), and target retrofit opportunities in existing homes under mild-climate, smoke/humidity-driven conditions (e.g., marine layer mold, wildfire PM2.5 ingress, diurnal comfort).
+
+**Core Assumptions (Feb 2026):**  
+- California Title 24, Part 6 (2025 Energy Code) effective for permits on/after Jan 1, 2026: strengthens ventilation/IAQ (e.g., balanced/HRV/ERV prescriptive in Zones 1,2,4,11–14,16; MERV upgrades; moisture management); builds on ASHRAE 62.2 (amended for filtration, local exhaust, source control); supports retrofits via incentives like 3C-REN (tri-county, $9.5M+ for efficiency/ventilation upgrades in Santa Barbara/SLO/Ventura, including single-family/multifamily).  
+- HEEHRA/HOMES rebates (IRA) mostly reserved/waitlisted in Central/Southern CA; pivot to utility programs (PG&E/SoCalGas/3C-REN) or bill/health savings.  
+- Wildfire smoke seasons lengthening → prioritize PM2.5 filtration, sealed modes, passive buffers.  
+- UL 723/UL 181 (ducts/filters), ASTM D5116 (emissions), ASHRAE 62.2 compliance paths.  
+- NIST AI RMF (minimal friction for passive/non-AI).  
+Prioritize passive/non-electrical designs for fast certification (<12 months) in CA retrofits.
+
+**Process Steps**
+
+### 1. Acknowledge Inputs
+- Restate Primary/Secondary Intent, Weights, and Constraints/Seed from the current query.  
+- Thinking Step: "Ignoring all prior context. Using actual February 2026 CA regulatory environment (Title 24 2025 Energy Code eff. Jan 1, 2026; ASHRAE 62.2 amendments; 3C-REN incentives; NIST AI RMF updates)."
+
+### 2. Generation & Risk-Audit Phase
+Generate 8–12 ideas (default 10; max 12). For each:  
+- **Product Title** & **2-Sentence Summary** (form factor, core benefit, key materials/processes).  
+- **Revenue Trigger**: Specific 2026 CA pain point/market gap (e.g., marine layer mold surges; wildfire smoke PM2.5 ingress; humidity/CO2 buildup in sealed homes; retrofit incentives for ventilation/IAQ).  
+- **Location-Aligned Revenue Trigger**: Explicit CA opportunity (e.g., complements Title 24 HRV/ERV baseline in retrofits; targets coastal Zone 5 humidity/smoke; leverages 3C-REN/utility programs; older housing stock IAQ issues).  
+- **FMEA Audit**:  
+  - **Potential Failure Mode**: One specific physical malfunction.  
+  - **Safety Hazard**: Human/property risk, emphasizing CA concerns (mold growth in coastal humidity, PM2.5/smoke ingress, off-gassing, filter clogging/fire risk, seismic vent/mount failure).  
+  - **Severity Score**: 1–10 (benchmarked to 2026 ASHRAE/UL; passive ≤5 ideal; score conservatively).  
+- **Engineering Resource Map**:  
+  - **Human "Wood" Required**: Specific discipline (e.g., Mechanical Engineer – ventilation flow; Materials Engineer – filter/PCM encapsulation; Building Science Engineer – moisture/IAQ modeling).  
+  - **Critical Lab Test**: Required test (e.g., ASTM D5116 IAQ emissions; ASHRAE 62.2 ventilation rate; ASTM E96 vapor transmission; UL 723 surface burning; MERV efficiency per ASHRAE).
+
+### 3. Evaluation Phase (v1.0 Scoring)
+- **Primary Score** (A = Revenue Confidence): BOM realism, gross margin at 500–5k units, 2026 supply-chain feasibility, DTC/Kickstarter/retail fit, repeat levers (e.g., filter/PCM refills), CA channels (3C-REN/utility rebates, health-focused DTC).  
+- **Safety & Regulatory Friction Score**: 1–10 (10 = certifiable <12 months with off-the-shelf tests like ASTM D5116/UL 723; 1 = multi-year due to novel emissions/seismic/smoke risks).  
+- **Evidence Tier**: 4 (Conceptual) default; 3 if strong 2025–2026 analogs (e.g., commercial HRV add-ons, passive moisture buffers).  
+- **CA Code Alignment Summary**: 1 sentence on Title 24/ASHRAE complementarity (e.g., enhances whole-dwelling ventilation without replacing mandated HRV/ERV; supports IAQ during smoke events).
+
+### 4. Ranking & Output Format
+Keep Top 5 (or user-specified N). Sort descending by Primary Score. For each:  
+- Product Title & Summary  
+- Revenue Trigger + Location-Aligned Revenue Trigger + CA Code Alignment Summary  
+- Primary Score: [A score + 1–2 sentence justification]  
+- Safety & Regulatory Friction Score  
+- Evidence Tier  
+- Full FMEA Audit & Engineering Resource Map  
+- Regulatory Milestone: Specific 2026 cert (e.g., ASHRAE 62.2 compliance path; UL 723/UL 181; ASTM D5116 emissions; Title 24 JA11 venting).  
+- Recommended First Validation Experiment: <14-day, low-cost, physical (e.g., benchtop mockup + CO2/PM2.5 sensor; humidity/smoke chamber test; AliExpress BOM check; Santa Maria-area homeowner interviews via Reddit/Nextdoor).
+
+**Discard Log**: List discarded + reason (e.g., "Conflicts with Title 24 prescriptive HRV/ERV in new construction; too electrical").
+
+**Overall Insights**: 2–3 sentences on patterns, risks (e.g., material durability in Zone 5 humidity/smoke; filter clogging during wildfire seasons), next constraint suggestions.
+
+**Framework Reminders (v1.0)**  
+- Retrofit compatibility for existing CA homes (pre-Title 24 stock).  
+- Passive/material innovations that **supplement** mandated ventilation/HRV/ERV.  
+- Conservative scoring; no unproven tech hype.  
+- If secondary intent exists: Compute weighted Dual Verdict.
+
+**License / Usage**  
+MIT License. Feel free to fork, adapt, or use. Attribution appreciated.
+
+**History**  
+Adapted from passive home heating prompt → focused on IAQ/ventilation retrofits in California, Feb 2026 regs.
+
+**END OF PROMPT**
+
+**Example Output from ChatGPT**  
+(Using the above prompt structure; condensed for this file – full details in conversation history)
+
+1. Acknowledge Inputs  
+Primary Intent: Revenue-First Product Goal (A)  
+... [omitted for brevity; see full in query]
+
+2. Generation & Risk-Audit Phase (Top 5 Ranked Excerpt)  
+
+1. Smoke-Resilient Window Micro-Intake Panel  
+Summary: Magnetic, gasket-sealed window insert allowing controlled intake with MERV 13–15 filtration during wildfire smoke events...  
+Primary Score: 8.5/10 (High DTC wildfire demand, replaceable filters = repeat revenue...)  
+Safety & Regulatory Friction: 7  
+Evidence Tier: 3  
+CA Code Alignment: Supplements 62.2 ventilation during smoke events...  
+Regulatory Milestone: ASHRAE 52.2 MERV validation.  
+First Validation: 14-day Santa Maria smoke simulation...
+
+2. Passive Coastal Vent Dehumidifier Cartridge  
+... [similar structure; Primary 7.8/10]
+
+3. Marine-Layer Mold Early Warning Patch  
+... [Primary 7.2/10]
+
+4. Portable Smoke Positive Pressure Fan Kit  
+... [Primary 7.0/10]
+
+5. Title 24 Smart Vent Verification Kit  
+... [Primary 6.8/10]
+
+Discard Log: PCM Wall Insert (high liability), HRV Smoke Sleeve (fan overload), etc.
+
+Overall Insights: California 2026 IAQ revenue strongest around wildfire smoke mitigation and coastal humidity control... Passive or semi-passive with consumables outperform structural... Airflow restriction leading to CO2 buildup is primary risk...
+
+(End of example output)
