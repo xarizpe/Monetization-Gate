@@ -1,3 +1,44 @@
+## Adoption & Next Refinement Guide
+
+This prompt (Monetization Gate v1.0) is a mature, specialized framework designed for generating, auditing, and ranking novel physical product concepts for **safe, supplemental passive home heating** in California retrofits. It embeds revenue realism, FMEA-style safety audits, engineering resource mapping, and alignment with the actual February 2026 regulatory landscape (Title 24 Part 6 2025 Energy Code effective January 1, 2026; UL 60335 series; etc.).
+
+It serves as **proof-of-concept** that iterative prompt specialization—from broad discovery to tightly constrained, location-aware feasibility studies—produces high-quality, defensible outputs suitable for engineering teams, product ideation, prototyping prioritization, or grant applications (e.g., CEC/ARPA-E alignment).
+
+### Adoption Steps for Your Organization
+1. **Fork & Integrate**  
+   Clone this repo and drop the prompt text into your internal tools (e.g., custom LLM interface, Notion template, or Airtable workflow). Use it as-is for initial runs on heating retrofit ideas.
+
+2. **First Test Run**  
+   - Input a focused query: e.g., "Generate 6–8 ideas: purely passive heating discharge using widely available PCM or hygroscopic materials; BOM under $40/unit; targeted at Santa Maria Zone 5 evening comfort in mild winters with marine layer humidity."  
+   - Review outputs for: high Primary Scores (>7), low Friction (<6 ideal for passive), realistic validation experiments, and no conflicts with Title 24 heat-pump baseline.
+
+3. **Customize for Your Workflow**  
+   Adapt the prompt to match your capabilities and strategy:
+   - **Localization** — Add defaults for your target zone (e.g., Santa Maria: ~2,200–2,500 heating degree days annually; marine humidity Oct–May; diurnal swings 30–40°F; wildfire smoke/IAQ lengthening seasons). Include fields like "Zone 5-Specific Trigger" for marine layer mold or evening thermal discharge.
+   - **Incentive Updates** — Replace static rebate mentions (HEEHRA single-family rebates fully reserved in Central CA since Jan 7, 2026; waitlists only) with dynamic notes or links to check status (techcleanca.com or energy.ca.gov). Shift revenue triggers to bill savings, PG&E/SoCalGas utility programs, or DTC efficiency appeals.
+   - **BOM & Manufacturing** — Add required fields: "Estimated First-Article Cost" (e.g., 3D-print + AliExpress BOM + lab test fees) and "Preferred Processes" (e.g., injection molding, CNC, regional near-shoring).
+   - **IP & Ecosystem** — Insert "Patent Surface Area" (e.g., novel encapsulation, seismic mounts) and "Recurring Revenue Levers" (e.g., PCM recharge kits, filter subscriptions).
+   - **Risk Thresholds** — Tune scoring: e.g., auto-reframe or discard if Severity >6 (seismic/IAQ risks) or Friction <5 unless mitigated.
+   - **Variant Branches** — Create forks: DTC/Kickstarter version (emphasize viral appeal); B2B HVAC contractor version (pro-install focus); R&D/grant version (CEC alignment, higher novelty).
+
+4. **Ongoing Refinement Loop**  
+   - After 3–5 runs, analyze patterns: high-scorers (e.g., lightweight PCM panels), common discards (heavy seismic risks), low-friction paths (passive envelope add-ons).  
+   - Feed insights back: e.g., add "Must use off-the-shelf PCM suppliers" or "Prioritize IAQ/smoke compatibility for Zone 5 wildfire seasons."  
+   - Version bump internally (v1.1, v1.2) as you incorporate real prototype data, supply-chain tests, or new regs (Title 24 locked through ~2031 per AB 130).  
+   - Track in a changelog: e.g., "v1.1 – Added Zone 5 diurnal swing trigger; updated HEEHRA status to waitlist-only."
+
+5. **Best Practices & Limitations**  
+   - **Strengths**: Produces engineering-grounded concepts with quick validation experiments; conservative scoring avoids hype.  
+   - **Limitations**: Outputs remain conceptual (Evidence Tier 3–4) until prototyped; always validate with real engineers/code consultants. Not a substitute for formal compliance review.  
+   - **Next Milestones**: Prototype top 2–3 ideas; seek user interviews in Santa Maria/Zone 5 via Nextdoor/Reddit; explore CEC grants for passive thermal storage retrofits.
+
+By treating v1.0 as a **strong baseline** rather than a final product, your organization can evolve it into a proprietary ideation engine tailored to your manufacturing strengths, risk profile, and market focus in California's decarbonization landscape.
+
+Contributions welcome—fork, PR refinements, or share your adapted versions!
+
+
+
+
 # Monetization Gate v1.0  
 **Engineering & Safety Edition – California Retrofit Focus for Novel Passive Home Heating Products**
 
