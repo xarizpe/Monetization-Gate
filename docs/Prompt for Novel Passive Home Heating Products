@@ -1,0 +1,69 @@
+# Monetization Gate v1.0  
+**Engineering & Safety Edition – California Retrofit Focus for Novel Passive Home Heating Products**
+
+**Version:** 1.0  
+**Release Date:** February 2026  
+**Purpose:**  
+This is a specialized strategic product ideation and feasibility framework optimized for generating, evaluating, and risk-auditing **novel physical product concepts** that provide safe, supplemental home heating in California (especially retrofits in coastal/central-coast regions like Santa Maria, Climate Zone 5).  
+
+It is **revenue-first** (DTC, Kickstarter/Indiegogo, retail, subscriptions) while embedding rigorous safety (FMEA), engineering resource mapping, and 2026 California regulatory compliance (Title 24 Part 6 2025 Energy Code effective Jan 1, 2026; UL 60335 series; etc.).  
+
+Ideas must be **passive or very low-voltage/material-based**, act as **complements** to mandated heat pumps (not replacements), and target retrofit opportunities in existing homes under mild-climate, incentive-driven conditions (e.g., HEEHRA rebates where available, envelope efficiency upgrades, humidity/mold mitigation, energy bill reduction).
+
+**Core Assumptions (Feb 2026):**  
+- California Title 24, Part 6 (2025 Energy Code) effective for permits on/after Jan 1, 2026: mandates/encourages heat pumps for space/water heating in new construction/additions; strengthens envelopes (lower U-factors); promotes electric-readiness, ventilation, peak shifting; supports retrofits via incentives (HEEHRA rebates up to $8k for income-qualified heat-pump HVAC, though many regions fully reserved/waitlisted as of Jan 2026).  
+- UL 60335-2-40 (4th ed., revised Oct 31, 2025) for heat pumps/air-conditioners/dehumidifiers; UL 723, UL 1995, UL 181, etc., for passive/building materials.  
+- NIST AI RMF (with 2024 Generative AI Profile; ongoing 2025–2026 drafts like Cyber AI Profile). Passive products face minimal AI-related friction.  
+- Prioritize passive/non-electrical designs for fast certification (<12 months) in CA retrofits.
+
+**Process Steps**
+
+### 1. Acknowledge Inputs
+- Restate Primary/Secondary Intent, Weights, and Constraints/Seed from the current query.  
+- Thinking Step: "Ignoring all prior context. Using actual February 2026 CA regulatory environment (Title 24 2025 Energy Code eff. Jan 1, 2026; UL 60335-2-40 rev. Oct 31, 2025; NIST AI RMF updates)."
+
+### 2. Generation & Risk-Audit Phase
+Generate 8–12 ideas (default 10; max 12). For each:  
+- **Product Title** & **2-Sentence Summary** (form factor, core benefit, key materials/processes).  
+- **Revenue Trigger**: Specific 2026 CA/LA pain point/market gap (e.g., mild winters + high summer peaks favoring passive storage; Title 24 envelope upgrades; coastal humidity/mold; retrofit incentives).  
+- **Location-Aligned Revenue Trigger**: Explicit CA opportunity (e.g., complements Title 24 heat-pump baseline in retrofits; targets older housing stock; leverages mild climate for zoning; rebate tie-ins where active).  
+- **FMEA Audit**:  
+  - **Potential Failure Mode**: One specific physical malfunction.  
+  - **Safety Hazard**: Human/property risk, emphasizing CA concerns (mold in coastal humidity, dust in dry seasons, seismic stability, IAQ off-gassing, fire per Title 24).  
+  - **Severity Score**: 1–10 (benchmarked to 2026 UL 60335 series; passive ≤5 ideal; score conservatively).  
+- **Engineering Resource Map**:  
+  - **Human "Wood" Required**: Specific discipline (e.g., Materials Engineer – PCM composites; Building Science Engineer – envelope integration).  
+  - **Critical Lab Test**: Required test (e.g., ASTM C1263 Thermal Cycling; ASTM E96 Vapor Transmission; ASTM E84/UL 723 Surface Burning; ASTM D5116 IAQ off-gassing).
+
+### 3. Evaluation Phase (v1.0 Scoring)
+- **Primary Score** (A = Revenue Confidence): BOM realism, gross margin at 500–5k units, 2026 supply-chain feasibility, DTC/Kickstarter/retail fit, repeat levers, CA channels (rebates, LADWP/SoCalGas).  
+- **Safety & Regulatory Friction Score**: 1–10 (10 = certifiable <12 months with off-the-shelf tests; 1 = multi-year due to novel risks/seismic/off-gassing).  
+- **Evidence Tier**: 4 (Conceptual) default; 3 if strong 2025–2026 analogs (e.g., commercial PCM retrofits).  
+- **CA Code Alignment Summary**: 1 sentence on Title 24 complementarity.
+
+### 4. Ranking & Output Format
+Keep Top 5 (or user-specified N). Sort descending by Primary Score. For each:  
+- Product Title & Summary  
+- Revenue Trigger + Location-Aligned Revenue Trigger + CA Code Alignment Summary  
+- Primary Score: [A score + 1–2 sentence justification]  
+- Safety & Regulatory Friction Score  
+- Evidence Tier  
+- Full FMEA Audit & Engineering Resource Map  
+- Regulatory Milestone: Specific 2026 cert (e.g., UL 723; UL 60335-2-40 if adjacent; ASTM/Title 24 envelope paths).  
+- Recommended First Validation Experiment: <14-day, low-cost, physical (e.g., benchtop mockup + IR camera; AliExpress BOM check; LA-area homeowner interviews via Reddit/Nextdoor; seismic sim if needed).
+
+**Discard Log**: List discarded + reason (e.g., "Conflicts with Title 24 heat-pump baseline for primary heating").
+
+**Overall Insights**: 2–3 sentences on patterns, risks (e.g., material durability in CA humidity/seismic zones), next constraint suggestions.
+
+**Framework Reminders (v1.0)**  
+- Retrofit compatibility for existing CA homes (pre-Title 24 stock).  
+- Passive/material innovations that **supplement** heat pumps.  
+- Conservative scoring; no unproven tech hype.  
+- If secondary intent exists: Compute weighted Dual Verdict.
+
+**License / Usage**  
+MIT License (or your preferred open license). Feel free to fork, adapt, or use in product ideation workflows. Attribution appreciated if shared publicly.
+
+**History**  
+- Derived from iterative refinements starting with broad discovery prompts → v2.4 (Engineering & Safety) → v2.4.1 (CA/LA Retrofit Focus) → v1.0 (final specialized version for passive home heating retrofits in California, Feb 2026 regs).
